@@ -1,0 +1,17 @@
+{
+  "author": "Fewlines",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@fewlines/eslint-config",
+  "repository": "git@github.com:fewlinesco/eslint-config.git",
+  "version": "0.1.0",
+  "eslintConfig": {
+    "extends": "./node"
+  },
+  "devDependencies": {
+    "eslint": "~6.6.0",
+    "eslint-config-prettier": "~6.5.0",
+    "eslint-plugin-prettier": "~3.1.1",
+    "prettier": "~1.18.2"
+  }
+}
