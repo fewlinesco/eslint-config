@@ -20,7 +20,7 @@ This plugin offer several configurations depending on your project type.
 
 ```shell
 yarn add -D @fewlines/eslint-config eslint \
-eslint-config-prettier eslint-plugin-prettier prettier \
+eslint-config-prettier eslint-plugin-prettier prettier
 ```
 
 Then add these lines to your package.json:
