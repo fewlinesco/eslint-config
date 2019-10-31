@@ -4,7 +4,7 @@
   "main": "index.js",
   "name": "@fewlines/eslint-config",
   "repository": "git@github.com:fewlinesco/eslint-config.git",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "eslintConfig": {
     "extends": "./node"
   },

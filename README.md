@@ -1,4 +1,4 @@
-# eslint-config-fewlines
+# eslint-config
 
 Disclaimer: this package is made for our internal usage and is only open source for convenience so we might not consider Pull Requests or Issues.
 Feel free to fork though.
@@ -10,6 +10,8 @@ The goal is to not have the editor run prettier directly as it would conflict wi
 
 See here for VSCode: https://github.com/prettier/prettier-vscode#vs-code-eslint-and-tslint-integration
 
+Vim users could use [ALE](https://github.com/dense-analysis/ale) and use `let g:ale_fix_on_save = 1` and `eslint` as the linter for JavaScript and TypeScript.
+
 ## Usage
 
 This plugin offer several configurations depending on your project type.
@@ -18,7 +20,7 @@ This plugin offer several configurations depending on your project type.
 
 ```shell
 yarn add -D @fewlines/eslint-config eslint \
-eslint-config-prettier eslint-plugin-prettier prettier \
+eslint-config-prettier eslint-plugin-prettier prettier
 ```
 
 Then add these lines to your package.json:
