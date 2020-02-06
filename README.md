@@ -67,6 +67,32 @@ Then add these lines to your package.json:
 
 The React plugin extends the previous Node plugin so it is not needed.
 
+### VS Code
+
+In order to integrate `ESLint` into `VS Code`, you need to add [this extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), then add these settings to your vscode's `settings.json`:
+
+```json
+"eslint.format.enable": true,
+"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+"[javascript]": {
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+"[javascriptreact]": {
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+"[typescript]": {
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+"[typescriptreact]": {
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+"[graphql]": {
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+```
+
+For more information, check [this](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) part of the documentation.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
