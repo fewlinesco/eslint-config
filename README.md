@@ -5,10 +5,10 @@ Feel free to fork though.
 
 This package includes the different styles we apply to our JavaScript and TypeScript code.
 
-⚠️  As this plugin wants to use a minimalist configuration, it relies on using prettier via ESLint which means you could have to configure your editor.
-The goal is to not have the editor run prettier directly as it would conflict with ESLint.
+⚠️  As this plugin wants to use a minimalist configuration, it relies on using prettier via ESLint which means you could have to configure your editor. The goal is to not have the editor run prettier directly as it would conflict with ESLint. 
 
-See here for VSCode: https://github.com/prettier/prettier-vscode#vs-code-eslint-and-tslint-integration
+Jump [here](#vs-code) for VSCode integration.
+
 
 Vim users could use [ALE](https://github.com/dense-analysis/ale) and use `let g:ale_fix_on_save = 1` and `eslint` as the linter for JavaScript and TypeScript.
 
@@ -66,6 +66,38 @@ Then add these lines to your package.json:
 ```
 
 The React plugin extends the previous Node plugin so it is not needed.
+
+### <a id="vs-code"></a>VS Code integration
+
+In order to integrate `ESLint` into `VS Code`, install these two extensions:
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+Then add these settings to your vscode's `settings.json`:
+
+```json
+"eslint.format.enable": true,
+"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+"[javascript]": {
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+"[javascriptreact]": {
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+"[typescript]": {
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+"[typescriptreact]": {
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+"[graphql]": {
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+```
+
+When done, restart `VS Code` (the `Reload Window` command is not enough for the linter to operate).
+
+For more information, check [this](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) part of the documentation.
 
 ## Contributing
 
