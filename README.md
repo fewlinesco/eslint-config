@@ -116,7 +116,9 @@ Then add these settings to your vscode's `settings.json`:
 }
 ```
 
-When done, restart `VS Code` (the `Reload Window` command is not enough for the linter to operate).
+If the linter does not work right away, you can pop the `VS Code` command palette with `⌘ Cmd + ↑ Shift + P` on mac, or `Ctrl + ↑ Shift + P` on windows/linux, and set the default formatter:
+
+![VS Code default linter gif](https://user-images.githubusercontent.com/31956107/75045130-06f07800-54c3-11ea-8881-f9c9a50efea9.gif)
 
 For more information, check [this](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) part of the documentation.
 
