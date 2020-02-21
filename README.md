@@ -67,6 +67,24 @@ Then add these lines to your package.json:
 
 The React plugin extends the previous Node plugin so it is not needed.
 
+### Preact + Typescript project
+
+```shell
+yarn add -D @fewlines/eslint-config eslint \
+eslint-config-prettier eslint-plugin-prettier prettier \
+@typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
+Then add these lines to your package.json:
+
+```json
+"eslintConfig": {
+  "extends": "@fewlines/eslint-config/preact-typescript"
+}
+```
+
+The React + Typescript plugin extends the previous Node plugin so it is not needed.
+
 ### <a id="vs-code"></a>VS Code integration
 
 In order to integrate `ESLint` into `VS Code`, install these two extensions:
@@ -93,6 +111,9 @@ Then add these settings to your vscode's `settings.json`:
 "[graphql]": {
   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
 },
+"[json]": {
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+}
 ```
 
 When done, restart `VS Code` (the `Reload Window` command is not enough for the linter to operate).
