@@ -1,29 +1,29 @@
 module.exports = {
   env: {
-    browser: true
+    browser: true,
   },
   extends: [
     "./index",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 6,
-    sourceType: "module"
+    sourceType: "module",
   },
   rules: {
-    "react/no-unknown-property": ["error", { ignore: ["class"] }]
+    "react/no-unknown-property": ["error", { ignore: ["class"] }],
   },
   settings: {
     react: {
       pragma: "h",
-      version: "detect"
-    }
-  }
+      version: "detect",
+    },
+  },
 };

@@ -1,4 +1,7 @@
 module.exports = {
+  parserOptions: {
+    sourceType: "module",
+  },
   extends: [
     "./index",
     "plugin:@typescript-eslint/eslint-recommended",
@@ -10,5 +13,9 @@ module.exports = {
   rules: {
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      { allowExpressions: true },
+    ],
   },
 };
