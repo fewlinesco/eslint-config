@@ -5,7 +5,7 @@ Feel free to fork though.
 
 This package includes the different styles we apply to our JavaScript and TypeScript code.
 
-⚠️  As this plugin wants to use a minimalist configuration, it relies on using prettier via ESLint which means you could have to configure your editor. The goal is to not have the editor run prettier directly as it would conflict with ESLint. 
+⚠️  As this plugin wants to use a minimalist configuration, it relies on using prettier via ESLint which means you could have to configure your editor. The goal is to not have the editor run prettier directly as it would conflict with ESLint.
 
 Jump [here](#vs-code) for VSCode integration.
 
@@ -20,7 +20,8 @@ This plugin offer several configurations depending on your project type.
 
 ```shell
 yarn add -D @fewlines/eslint-config eslint \
-eslint-config-prettier eslint-plugin-prettier prettier
+eslint-config-prettier eslint-plugin-prettier prettier \
+eslint-plugin-import
 ```
 
 Then add these lines to your package.json:
@@ -36,7 +37,8 @@ Then add these lines to your package.json:
 ```shell
 yarn add -D @fewlines/eslint-config eslint \
 eslint-config-prettier eslint-plugin-prettier prettier \
-@typescript-eslint/eslint-plugin @typescript-eslint/parser
+@typescript-eslint/eslint-plugin @typescript-eslint/parser \
+eslint-plugin-import
 ```
 
 Then add these lines to your package.json:
@@ -54,7 +56,8 @@ The TypeScript plugin extends the previous Node plugin so it is not needed.
 ```shell
 yarn add -D @fewlines/eslint-config eslint \
 eslint-config-prettier eslint-plugin-prettier prettier \
-eslint-plugin-react
+eslint-plugin-react \
+eslint-plugin-import
 ```
 
 Then add these lines to your package.json:
@@ -72,7 +75,8 @@ The React plugin extends the previous Node plugin so it is not needed.
 ```shell
 yarn add -D @fewlines/eslint-config eslint \
 eslint-config-prettier eslint-plugin-prettier prettier \
-@typescript-eslint/eslint-plugin @typescript-eslint/parser
+@typescript-eslint/eslint-plugin @typescript-eslint/parser \
+eslint-plugin-import
 ```
 
 Then add these lines to your package.json:
