@@ -17,5 +17,6 @@ module.exports = {
       "error",
       { allowExpressions: true },
     ],
+    "react/prop-types": 0,
   },
 };
