@@ -8,9 +8,6 @@ module.exports = {
     ecmaVersion: 2019,
     sourceType: "module",
   },
-  rules: {
-    "react/prop-types": 0,
-  },
   settings: {
     react: { version: "detect" },
   },
