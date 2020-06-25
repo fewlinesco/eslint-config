@@ -77,6 +77,8 @@ The React plugin extends the previous Node plugin so it is not needed.
 
 ### React + TypeScript project
 
+⚠️ This preset only aim to remove the `prop-types` checks. You should use it along the `react` and `typescript` presets.
+
 ```shell
 yarn add -D @fewlines/eslint-config eslint \
 eslint-config-prettier eslint-plugin-prettier prettier \
@@ -89,7 +91,11 @@ Then add these lines to your `package.json`:
 
 ```json
 "eslintConfig": {
-  "extends": "@fewlines/eslint-config/react-typescript"
+  "extends": [
+    "@fewlines/eslint-config/typescript",
+    "@fewlines/eslint-config/react",
+    "@fewlines/eslint-config/react-typescript"
+  ]
 }
 ```
 
