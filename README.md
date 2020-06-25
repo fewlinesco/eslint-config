@@ -5,10 +5,9 @@ Feel free to fork though.
 
 This package includes the different styles we apply to our JavaScript and TypeScript code.
 
-⚠️  As this plugin wants to use a minimalist configuration, it relies on using prettier via ESLint which means you could have to configure your editor. The goal is to not have the editor run prettier directly as it would conflict with ESLint.
+⚠️ As this plugin wants to use a minimalist configuration, it relies on using prettier via ESLint which means you could have to configure your editor. The goal is to not have the editor run prettier directly as it would conflict with ESLint.
 
 Jump [here](#vs-code) for VSCode integration.
-
 
 Vim users could use [ALE](https://github.com/dense-analysis/ale) and use `let g:ale_fix_on_save = 1` and `eslint` as the linter for JavaScript and TypeScript.
 
@@ -32,6 +31,8 @@ Then add these lines to your package.json:
 }
 ```
 
+---
+
 ### TypeScript project
 
 ```shell
@@ -50,6 +51,8 @@ Then add these lines to your package.json:
 ```
 
 The TypeScript plugin extends the previous Node plugin so it is not needed.
+
+---
 
 ### React project
 
@@ -70,7 +73,37 @@ Then add these lines to your package.json:
 
 The React plugin extends the previous Node plugin so it is not needed.
 
-### Preact + Typescript project
+---
+
+### React + TypeScript project
+
+⚠️ This preset only aim to remove the `prop-types` checks. You should use it along the `react` and `typescript` presets.
+
+```shell
+yarn add -D @fewlines/eslint-config eslint \
+eslint-config-prettier eslint-plugin-prettier prettier \
+@typescript-eslint/eslint-plugin @typescript-eslint/parser \
+eslint-plugin-react \
+eslint-plugin-import
+```
+
+Then add these lines to your `package.json`:
+
+```json
+"eslintConfig": {
+  "extends": [
+    "@fewlines/eslint-config/typescript",
+    "@fewlines/eslint-config/react",
+    "@fewlines/eslint-config/react-typescript"
+  ]
+}
+```
+
+The React + Typescript plugin extends the previous Node plugin so it is not needed.
+
+---
+
+### Preact + TypeScript project
 
 ```shell
 yarn add -D @fewlines/eslint-config eslint \
@@ -79,7 +112,7 @@ eslint-config-prettier eslint-plugin-prettier prettier \
 eslint-plugin-import
 ```
 
-Then add these lines to your package.json:
+Then add these lines to your `package.json`:
 
 ```json
 "eslintConfig": {
@@ -87,11 +120,14 @@ Then add these lines to your package.json:
 }
 ```
 
-The React + Typescript plugin extends the previous Node plugin so it is not needed.
+The Preact + Typescript plugin extends the previous Node plugin so it is not needed.
+
+---
 
 ### <a id="vs-code"></a>VS Code integration
 
 In order to integrate `ESLint` into `VS Code`, install these two extensions:
+
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
