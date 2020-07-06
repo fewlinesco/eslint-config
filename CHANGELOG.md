@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.1.1 - 2020-07-06
+
+- Added `es6:true` to `env` to allow usage of Node globals in the `node` preset.
+
 ## 2.1.0 - 2020-06-23
 
 - Added `react-typescript` preset (which remove `prop-types` calls).
