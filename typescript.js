@@ -3,6 +3,7 @@ module.exports = {
     sourceType: "module",
   },
   extends: [
+    "./node",
     "./index",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
