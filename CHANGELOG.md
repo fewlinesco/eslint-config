@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.0.0 - 2020-07-16
+
+- Made `typescript.ts` extend `node.ts` configuration.
+
 ## 2.1.1 - 2020-07-06
 
 - Added `es6:true` to `env` to allow usage of Node globals in the `node` preset.
