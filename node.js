@@ -21,6 +21,12 @@ module.exports = {
           ["builtin", "external"],
           ["parent", "sibling", "index"],
         ],
+        pathGroups: [
+          {
+            pattern: "@src/**",
+            group: "internal",
+          },
+        ],
       },
     ],
   },

@@ -75,6 +75,8 @@ import { Handler } from "./handler";
 
 === Export
 
+You can find all our rules on https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/group-exports.md[this document from eslint-plugin-import].
+
 == Usage
 
 This plugin offer several configurations depending on your project type.
