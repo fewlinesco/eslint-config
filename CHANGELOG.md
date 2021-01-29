@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 3.1.0 - 2021-01-22
+## 3.1.0 - 2021-01-29
 
 - Added rules for export. See documentation.
 - Added import path group rule. `@src/**` is now considered an internal import.

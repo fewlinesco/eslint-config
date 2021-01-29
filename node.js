@@ -19,7 +19,7 @@ module.exports = {
         "newlines-between": "always",
         groups: [
           ["builtin", "external"],
-          ["parent", "sibling", "index"],
+          ["internal", "parent", "sibling", "index"],
         ],
         pathGroups: [
           {
@@ -29,5 +29,7 @@ module.exports = {
         ],
       },
     ],
+    "import/group-exports": "error",
+    "import/exports-last": "error",
   },
 };

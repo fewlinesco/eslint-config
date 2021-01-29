@@ -75,7 +75,9 @@ import { Handler } from "./handler";
 
 === Export
 
-You can find all our rules on https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/group-exports.md[this document from eslint-plugin-import].
+For export rules, we are using:
+- https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/group-exports.md[group-exports].
+- https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/exports-last.md[exports-last].
 
 == Usage
 
