@@ -55,7 +55,7 @@ Vim users could use https://github.com/dense-analysis/ale[ALE] and use `let g:al
 
 == General rules
 
-To enforce consistency throughout our imports and export, we are using https://www.npmjs.com/package/eslint-plugin-import[eslint-plugin-export].
+To enforce consistency throughout our imports and exports, we are using https://www.npmjs.com/package/eslint-plugin-import[eslint-plugin-import].
 
 === Import
 
