@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 3.1.0 - 2021-01-29
+
+- Added rules for export. See documentation.
+- Added import path group rule. `@src/**` is now considered an internal import.
+
+### Bump of dependencies
+
+```ts
+  @typescript-eslint/eslint-plugin  dev    ~1mo  4.11.0  →  4.14.0   ~4d
+  @typescript-eslint/parser         dev    ~1mo  4.11.0  →  4.14.0   ~4d
+  eslint                            dev    ~1mo  7.16.0  →  7.18.0   ~6d
+  eslint-config-prettier            dev    ~1mo   7.1.0  →   7.2.0   ~4d
+  eslint-plugin-prettier            dev    ~1mo   3.3.0  →   3.3.1  ~18d
+
+  4 minor, 1 patch updates
+```
+
 ## 3.0.0 - 2020-07-16
 
 - Made `typescript.ts` extend `node.ts` configuration.
