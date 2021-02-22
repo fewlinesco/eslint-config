@@ -12,8 +12,6 @@ eslint                              7.18.0  →   7.20.0  dev
 typescript                          4.1.3   →   4.1.5   dev
 ```
 
-- Bump `eslint-config-prettier` dep to version `8.0.0`
-
 ## 3.1.0 - 2021-01-29
 
 - Added import path group rule. `@src/**` is now considered an internal import.
