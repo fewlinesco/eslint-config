@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 3.2.0 - 2021-02-22
+## 3.1.1 - 2021-02-22
 
 ### Bump of dependencies
 
