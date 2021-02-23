@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 3.1.1 - 2021-02-22
+
+### Bump of dependencies
+
+```ts
+eslint-config-prettier              7.2.0   →   8.0.0   dev
+@typescript-eslint/eslint-plugin    4.14.0  →   4.15.1  dev
+@typescript-eslint/parser           4.14.0  →   4.15.1  dev
+eslint                              7.18.0  →   7.20.0  dev
+typescript                          4.1.3   →   4.1.5   dev
+```
+
 ## 3.1.0 - 2021-01-29
 
 - Added import path group rule. `@src/**` is now considered an internal import.
