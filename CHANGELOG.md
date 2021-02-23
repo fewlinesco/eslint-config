@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.1.2 - 2021-02-23
+
+Bug fix: `react-typescript.js` configuration updated (it missed in the previous fix)
+
 ## 3.1.1 - 2021-02-22
 
 ### Bump of dependencies
