@@ -10,7 +10,7 @@ function code(strings) {
   }
   const [, spaces] = lines[0].match(/(^\s*)(.*)/);
   return lines
-    .map(string => {
+    .map((string) => {
       return string.replace(spaces, "");
     })
     .join("\n");
